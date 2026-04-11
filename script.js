@@ -21,10 +21,8 @@ document.querySelectorAll('.mobile-link').forEach(link => {
 });
 
 // ── SCROLL REVEAL ──────────────────────────────────────────
-// Mark all reveals visible immediately if page is already scrolled
-function revealAll() {
-  document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
-}
+// Add animate class via JS only — so if JS fails, content is always visible
+document.querySelectorAll('.reveal').forEach(el => el.classList.add('animate'));
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -33,15 +31,9 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(e.target);
     }
   });
-}, { threshold: 0, rootMargin: '0px 0px 0px 0px' });
+}, { threshold: 0 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-// Safety net: if nothing is visible after 1.5s, reveal everything
-setTimeout(() => {
-  const hidden = document.querySelectorAll('.reveal:not(.visible)');
-  if (hidden.length > 0) hidden.forEach(el => el.classList.add('visible'));
-}, 1500);
 
 // ── PROJECT TABS ───────────────────────────────────────────
 document.querySelectorAll('.tab-btn').forEach(btn => {
