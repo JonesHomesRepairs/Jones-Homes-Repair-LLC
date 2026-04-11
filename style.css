@@ -36,17 +36,16 @@ body {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background:
-    url('assets/bg.jpg') center/cover no-repeat;
+  background: url('assets/bg.jpg') center/cover no-repeat;
   background-attachment: fixed;
-  filter: brightness(0.4);
+  filter: brightness(0.5);
 }
 
 .fixed-bg::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 20% 60%, rgba(46,35,24,0.6) 0%, transparent 65%);
+  background: radial-gradient(ellipse at 20% 60%, rgba(46,35,24,0.5) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -176,34 +175,7 @@ nav.scrolled {
   align-items: flex-end;
   padding: 0 4rem 7rem;
   overflow: hidden;
-}
-
-.hero-image-wrapper {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.hero-image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 30%;
-  position: sticky;
-  top: 0;
-}
-
-.hero-image-wrapper::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(13,12,11,0.95) 0%,
-    rgba(13,12,11,0.45) 45%,
-    rgba(13,12,11,0.1) 100%
-  );
+  /* No image wrapper - bg.jpg shows directly through */
 }
 
 .hero-content {
@@ -399,6 +371,33 @@ nav.scrolled {
 /* ── SECTION BASE ──────────────────────────────────── */
 section { position: relative; z-index: 1; }
 
+/* Sections with content sit on semi-opaque panels */
+section.panel {
+  background: rgba(10,9,8,0.82);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* Break dividers — fully naked background, no content */
+.section-break {
+  position: relative;
+  z-index: 1;
+  height: 120px;
+  background: transparent;
+}
+
+/* Thin gold rule that sits in the break */
+.section-break::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 1px;
+  background: rgba(212,168,83,0.4);
+}
+
 .section-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -437,7 +436,7 @@ section { position: relative; z-index: 1; }
 
 /* ── SERVICES ──────────────────────────────────────── */
 #services {
-  padding: 8rem 0;
+  padding: 7rem 0;
   background: transparent;
 }
 
@@ -509,7 +508,7 @@ section { position: relative; z-index: 1; }
 
 /* ── PROJECTS ──────────────────────────────────────── */
 #projects {
-  padding: 8rem 0;
+  padding: 7rem 0;
   background: transparent;
 }
 
@@ -671,7 +670,7 @@ section { position: relative; z-index: 1; }
 
 /* ── PROCESS ───────────────────────────────────────── */
 #process {
-  padding: 8rem 0;
+  padding: 7rem 0;
   background: transparent;
 }
 
@@ -741,7 +740,7 @@ section { position: relative; z-index: 1; }
 }
 
 /* ── ABOUT ─────────────────────────────────────────── */
-#about { padding: 8rem 0; background: transparent; }
+#about { padding: 7rem 0; background: transparent; }
 
 .about-wrap {
   display: grid;
@@ -801,9 +800,9 @@ section { position: relative; z-index: 1; }
 
 /* ── CONTACT ───────────────────────────────────────── */
 #contact {
-  padding: 8rem 0;
+  padding: 7rem 0;
   background: transparent;
-  border-top: 1px solid rgba(212,168,83,0.12);
+  border-top: none;
 }
 
 .contact-wrap {
@@ -1005,6 +1004,7 @@ footer {
   footer { flex-direction: column; align-items: flex-start; padding: 2rem 1.5rem; }
   .section-inner { padding: 0 1.5rem; }
   #services, #projects, #process, #about, #contact { padding: 5rem 0; }
+  .section-break { height: 80px; }
 }
 
 @media (max-width: 640px) {
