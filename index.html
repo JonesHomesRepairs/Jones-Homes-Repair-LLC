@@ -4,46 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jones Home & Repairs | Custom Homes · Remodels · General Contracting</title>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- Fixed atmospheric background -->
 <div class="fixed-bg"></div>
 
 <!-- ── NAV ── -->
 <nav id="main-nav">
   <a href="#hero" class="nav-logo">
-    Jones Home
-    <span>&amp; Repairs · General Contracting</span>
+    <img src="assets/logo.png" alt="Jones Home & Repairs" class="nav-logo-img" />
   </a>
-
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
-    <li><a href="#project">Our Work</a></li>
+    <li><a href="#projects">Our Work</a></li>
     <li><a href="#process">Process</a></li>
     <li><a href="#about">About</a></li>
   </ul>
-
   <a href="#contact" class="nav-cta">Get a Quote</a>
-
   <button class="hamburger" id="hamburger" aria-label="Open menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- Mobile Menu -->
 <div class="mobile-menu" id="mobile-menu">
   <button class="mobile-close" id="mobile-close">✕</button>
   <a href="#services" class="mobile-link">Services</a>
-  <a href="#project" class="mobile-link">Our Work</a>
+  <a href="#projects" class="mobile-link">Our Work</a>
   <a href="#process" class="mobile-link">Process</a>
   <a href="#about" class="mobile-link">About</a>
   <a href="#contact" class="mobile-link">Get a Quote</a>
@@ -52,19 +42,11 @@
 <!-- ── HERO ── -->
 <section id="hero">
   <div class="hero-image-wrapper">
-    <!-- TO CUSTOMIZE: Replace src with Josh's actual job site photo -->
-    <img
-      src="assets/hero.jpg"
-      alt="Custom home construction"
-    />
+    <img src="assets/hero.jpg" alt="Jones Home and Repairs" />
   </div>
-
   <div class="hero-content">
     <p class="hero-eyebrow">East Texas · Built Right · Built to Last</p>
-    <h1 class="hero-h1">
-      Built From
-      <em>The Ground Up.</em>
-    </h1>
+    <h1 class="hero-h1">Built From<em>The Ground Up.</em></h1>
     <p class="hero-sub">
       Custom homes, remodels, roofing, pools, drainage &amp; more.
       Josh Jones brings full-service contracting expertise to every project —
@@ -72,10 +54,9 @@
     </p>
     <div class="hero-actions">
       <a href="#contact" class="btn-primary">Start Your Project</a>
-      <a href="#services" class="btn-ghost">View Services</a>
+      <a href="#projects" class="btn-ghost">View Our Work</a>
     </div>
   </div>
-
   <div class="hero-stats">
     <div class="hero-stat">
       <div class="hero-stat-num">15+</div>
@@ -110,141 +91,218 @@
         One crew. One point of contact. Zero headaches.
       </p>
     </div>
-
     <div class="services-grid">
-
       <div class="service-card reveal">
         <span class="service-icon">🏠</span>
         <div class="service-name">Custom Homes</div>
-        <p class="service-desc">Ground-up residential construction built to your vision. We work from custom plans to deliver a home that's yours from the foundation up.</p>
+        <p class="service-desc">Ground-up residential construction built to your vision, from the foundation up.</p>
       </div>
-
       <div class="service-card reveal">
         <span class="service-icon">🔨</span>
         <div class="service-name">Remodels</div>
-        <p class="service-desc">Kitchen expansions, additions, full interior overhauls — we transform existing spaces with the same care we put into new construction.</p>
+        <p class="service-desc">Kitchen expansions, additions, full interior overhauls — existing spaces transformed.</p>
       </div>
-
       <div class="service-card reveal">
         <span class="service-icon">📋</span>
         <div class="service-name">General Contracting</div>
-        <p class="service-desc">Full project management from permits to punch list. We coordinate every trade so your project stays on schedule and on budget.</p>
+        <p class="service-desc">Full project management from permits to punch list. Every trade, coordinated.</p>
       </div>
-
       <div class="service-card reveal">
         <span class="service-icon">🏗️</span>
         <div class="service-name">Roofing</div>
-        <p class="service-desc">New roof installation, replacements, and repairs. We work with shingles, metal roofing, and specialty systems for any structure.</p>
+        <p class="service-desc">New installs, replacements, and repairs. Shingles, metal, and specialty systems.</p>
       </div>
-
       <div class="service-card reveal">
         <span class="service-icon">🏊</span>
         <div class="service-name">Pools</div>
-        <p class="service-desc">Custom pool construction designed and built to complement your property. From excavation to tile work, we handle the full build.</p>
+        <p class="service-desc">Custom pool construction from excavation to tile work. The full build, handled.</p>
       </div>
-
+      <div class="service-card reveal">
+        <span class="service-icon">🐄</span>
+        <div class="service-name">Barns &amp; Ag Structures</div>
+        <p class="service-desc">Solid barn and agricultural builds. Quality framing, quality materials, done right.</p>
+      </div>
       <div class="service-card reveal">
         <span class="service-icon">🌊</span>
         <div class="service-name">Storm Drainage</div>
-        <p class="service-desc">Proper grading, drainage systems, and water management solutions to protect your property and prevent long-term damage.</p>
+        <p class="service-desc">Grading, drainage systems, and water management to protect your property long-term.</p>
       </div>
-
       <div class="service-card reveal">
         <span class="service-icon">💧</span>
         <div class="service-name">Water Damage Remediation</div>
-        <p class="service-desc">Fast response, thorough restoration. We assess, remove, and rebuild damaged structures to bring your property back to full integrity.</p>
+        <p class="service-desc">Fast response, thorough restoration. We assess, remove, and rebuild — right.</p>
       </div>
-
       <div class="service-card reveal">
         <span class="service-icon">🧱</span>
         <div class="service-name">Retaining Walls</div>
-        <p class="service-desc">Engineered retaining walls for erosion control, grading, and aesthetic landscaping — built to hold for decades.</p>
+        <p class="service-desc">Engineered retaining walls for erosion control and landscaping, built to last decades.</p>
       </div>
-
-      <div class="service-card reveal">
-        <span class="service-icon">⚡</span>
-        <div class="service-name">And More</div>
-        <p class="service-desc">If it involves building, repairing, or improving a structure — give us a call. We take on the jobs others won't.</p>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- ── FEATURED PROJECT ── -->
-<section id="project">
+<!-- ── PROJECTS ── -->
+<section id="projects">
   <div class="section-inner">
-    <div class="project-wrap">
+    <p class="section-eyebrow reveal">Our Work</p>
+    <h2 class="section-title reveal">Projects That<br>Speak for Themselves</h2>
+    <p class="projects-intro reveal">Every job below was handled start to finish by Jones Home &amp; Repairs. Real work. Real results.</p>
 
-      <div class="project-text">
-        <p class="project-label">Featured Work — Completed Residence</p>
-        <p class="section-eyebrow reveal">Our Work</p>
-        <h2 class="section-title reveal">Custom Home,<br>Palestine TX</h2>
-        <p class="about-body reveal" style="margin-top:1.5rem;">
-          This <strong>1,943 sq ft custom residence</strong> was designed and built from the ground up
-          for the McCarter family. From structural framing to the finished barnwood-accent exterior,
-          every detail was executed to plan — on time, on budget.
-        </p>
-        <p class="about-body reveal">
-          The home features an open great room, dedicated master suite with walk-in closets,
-          two additional bedrooms, a full laundry room, and a welcoming front porch — all under
-          a clean metal-and-shingle roofline.
-        </p>
-
-        <div class="project-specs reveal">
-          <div class="spec-item">
-            <div class="spec-label">Heated &amp; Cooled</div>
-            <div class="spec-value">1,943 SF</div>
-          </div>
-          <div class="spec-item">
-            <div class="spec-label">Total Under Roof</div>
-            <div class="spec-value">2,485 SF</div>
-          </div>
-          <div class="spec-item">
-            <div class="spec-label">Bedrooms</div>
-            <div class="spec-value">3 BR / 2 BA</div>
-          </div>
-          <div class="spec-item">
-            <div class="spec-label">Location</div>
-            <div class="spec-value">Palestine, TX</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-visual reveal">
-        <div class="project-blueprint">
-          <!-- Decorative floor plan SVG based on actual McCarter plans -->
-          <svg class="blueprint-svg" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="20" y="20" width="360" height="260" stroke="#d4a853" stroke-width="2.5" fill="none"/>
-            <line x1="200" y1="20" x2="200" y2="180" stroke="#d4a853" stroke-width="1.5"/>
-            <line x1="20" y1="120" x2="200" y2="120" stroke="#d4a853" stroke-width="1.5"/>
-            <line x1="200" y1="160" x2="380" y2="160" stroke="#d4a853" stroke-width="1.5"/>
-            <line x1="260" y1="160" x2="260" y2="280" stroke="#d4a853" stroke-width="1.5"/>
-            <line x1="20" y1="180" x2="200" y2="180" stroke="#d4a853" stroke-width="1.5"/>
-            <path d="M200 120 Q230 120 230 150" stroke="#d4a853" stroke-width="0.8" stroke-dasharray="3,2"/>
-            <path d="M200 160 Q200 180 220 180" stroke="#d4a853" stroke-width="0.8" stroke-dasharray="3,2"/>
-            <rect x="60" y="18" width="30" height="4" fill="#d4a853" opacity="0.6"/>
-            <rect x="130" y="18" width="30" height="4" fill="#d4a853" opacity="0.6"/>
-            <rect x="240" y="18" width="50" height="4" fill="#d4a853" opacity="0.6"/>
-            <rect x="330" y="18" width="30" height="4" fill="#d4a853" opacity="0.6"/>
-            <text x="100" y="70" fill="#d4a853" font-size="10" font-family="monospace" opacity="0.5" text-anchor="middle">GREAT ROOM</text>
-            <text x="290" y="90" fill="#d4a853" font-size="8" font-family="monospace" opacity="0.5" text-anchor="middle">MASTER</text>
-            <text x="100" y="155" fill="#d4a853" font-size="8" font-family="monospace" opacity="0.5" text-anchor="middle">KITCHEN</text>
-            <text x="310" y="220" fill="#d4a853" font-size="8" font-family="monospace" opacity="0.5" text-anchor="middle">BED 2</text>
-            <text x="140" y="235" fill="#d4a853" font-size="8" font-family="monospace" opacity="0.5" text-anchor="middle">LAUNDRY / BED 1</text>
-            <rect x="80" y="276" width="160" height="24" stroke="#d4a853" stroke-width="1" stroke-dasharray="4,3" fill="none"/>
-            <text x="160" y="292" fill="#d4a853" font-size="8" font-family="monospace" opacity="0.4" text-anchor="middle">FRONT PORCH</text>
-          </svg>
-          <div class="blueprint-text">
-            Floor Plan<br/>1/4" = 1'-0"<br/>Megan Seal Design
-          </div>
-        </div>
-        <div class="project-badge">
-          Complete<br/>Build
-        </div>
-      </div>
-
+    <div class="project-tabs reveal">
+      <button class="tab-btn active" data-tab="home">New Home Build</button>
+      <button class="tab-btn" data-tab="pool">Pool</button>
+      <button class="tab-btn" data-tab="barn">Barn</button>
+      <button class="tab-btn" data-tab="septic">Septic</button>
     </div>
+
+    <!-- New Home Build -->
+    <div class="project-panel active" id="tab-home">
+      <div class="project-layout">
+        <div class="project-gallery">
+          <div class="gallery-main">
+            <img src="assets/home1.jpg" alt="New home build" loading="lazy" />
+          </div>
+          <div class="gallery-thumbs">
+            <div class="thumb active" data-src="assets/home1.jpg"><img src="assets/home1.jpg" alt="" loading="lazy" /></div>
+            <div class="thumb" data-src="assets/home2.jpg"><img src="assets/home2.jpg" alt="" loading="lazy" /></div>
+            <div class="thumb" data-src="assets/home3.jpg"><img src="assets/home3.jpg" alt="" loading="lazy" /></div>
+            <div class="thumb" data-src="assets/home4.jpg"><img src="assets/home4.jpg" alt="" loading="lazy" /></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag">Custom Home Build</div>
+          <h3 class="project-title">New Residence<br>Palestine, TX</h3>
+          <p class="project-body">Ground-up custom home construction managed entirely by Jones Home &amp; Repairs — from foundation to final trim, on schedule and on budget.</p>
+          <div class="project-details">
+            <div class="project-detail-item">
+              <span class="detail-label">Type</span>
+              <span class="detail-val">Custom Residential</span>
+            </div>
+            <div class="project-detail-item">
+              <span class="detail-label">Location</span>
+              <span class="detail-val">Palestine, TX</span>
+            </div>
+            <div class="project-detail-item">
+              <span class="detail-label">Status</span>
+              <span class="detail-val">Completed</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary" style="margin-top:2rem; display:inline-block;">Start Your Build</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pool -->
+    <div class="project-panel" id="tab-pool">
+      <div class="project-layout">
+        <div class="project-gallery">
+          <div class="gallery-main">
+            <img src="assets/pool1.jpg" alt="Pool build" loading="lazy" />
+          </div>
+          <div class="gallery-thumbs">
+            <div class="thumb active" data-src="assets/pool1.jpg"><img src="assets/pool1.jpg" alt="" loading="lazy" /></div>
+            <div class="thumb" data-src="assets/pool2.jpg"><img src="assets/pool2.jpg" alt="" loading="lazy" /></div>
+            <div class="thumb" data-src="assets/pool3.jpg"><img src="assets/pool3.jpg" alt="" loading="lazy" /></div>
+            <div class="thumb" data-src="assets/pool4.jpg"><img src="assets/pool4.jpg" alt="" loading="lazy" /></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag">Pool Construction</div>
+          <h3 class="project-title">Custom Pool<br>East Texas</h3>
+          <p class="project-body">Full-scope pool build from excavation to finish. Grading, concrete, plumbing, and tile work — all handled in-house and built to last.</p>
+          <div class="project-details">
+            <div class="project-detail-item">
+              <span class="detail-label">Type</span>
+              <span class="detail-val">Custom Pool</span>
+            </div>
+            <div class="project-detail-item">
+              <span class="detail-label">Location</span>
+              <span class="detail-val">East Texas</span>
+            </div>
+            <div class="project-detail-item">
+              <span class="detail-label">Status</span>
+              <span class="detail-val">Completed</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary" style="margin-top:2rem; display:inline-block;">Get a Pool Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barn -->
+    <div class="project-panel" id="tab-barn">
+      <div class="project-layout">
+        <div class="project-gallery">
+          <div class="gallery-main">
+            <img src="assets/barn1.jpg" alt="Barn build" loading="lazy" />
+          </div>
+          <div class="gallery-thumbs">
+            <div class="thumb active" data-src="assets/barn1.jpg"><img src="assets/barn1.jpg" alt="" loading="lazy" /></div>
+            <div class="thumb" data-src="assets/barn2.jpg"><img src="assets/barn2.jpg" alt="" loading="lazy" /></div>
+            <div class="thumb" data-src="assets/barn3.jpg"><img src="assets/barn3.jpg" alt="" loading="lazy" /></div>
+            <div class="thumb" data-src="assets/barn4.jpg"><img src="assets/barn4.jpg" alt="" loading="lazy" /></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag">Barn Construction</div>
+          <h3 class="project-title">Barn Build<br>East Texas</h3>
+          <p class="project-body">Solid barn construction built to spec. Quality framing, quality materials — the same attention to detail we bring to every project we take on.</p>
+          <div class="project-details">
+            <div class="project-detail-item">
+              <span class="detail-label">Type</span>
+              <span class="detail-val">Agricultural / Barn</span>
+            </div>
+            <div class="project-detail-item">
+              <span class="detail-label">Location</span>
+              <span class="detail-val">East Texas</span>
+            </div>
+            <div class="project-detail-item">
+              <span class="detail-label">Status</span>
+              <span class="detail-val">Completed</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary" style="margin-top:2rem; display:inline-block;">Start Your Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Septic -->
+    <div class="project-panel" id="tab-septic">
+      <div class="project-layout">
+        <div class="project-gallery">
+          <div class="gallery-main">
+            <img src="assets/septic1.jpg" alt="Septic job" loading="lazy" />
+          </div>
+          <div class="gallery-thumbs">
+            <div class="thumb active" data-src="assets/septic1.jpg"><img src="assets/septic1.jpg" alt="" loading="lazy" /></div>
+            <div class="thumb" data-src="assets/septic2.jpg"><img src="assets/septic2.jpg" alt="" loading="lazy" /></div>
+            <div class="thumb" data-src="assets/septic3.jpg"><img src="assets/septic3.jpg" alt="" loading="lazy" /></div>
+            <div class="thumb" data-src="assets/septic4.jpg"><img src="assets/septic4.jpg" alt="" loading="lazy" /></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tag">Septic System</div>
+          <h3 class="project-title">Septic Installation<br>East Texas</h3>
+          <p class="project-body">Complete septic system installation. Proper grading, excavation, and setup — done right so you never have to think about it again.</p>
+          <div class="project-details">
+            <div class="project-detail-item">
+              <span class="detail-label">Type</span>
+              <span class="detail-val">Septic System</span>
+            </div>
+            <div class="project-detail-item">
+              <span class="detail-label">Location</span>
+              <span class="detail-val">East Texas</span>
+            </div>
+            <div class="project-detail-item">
+              <span class="detail-label">Status</span>
+              <span class="detail-val">Completed</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary" style="margin-top:2rem; display:inline-block;">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -254,9 +312,8 @@
     <div style="text-align:center; max-width:600px; margin:0 auto;">
       <p class="section-eyebrow reveal" style="justify-content:center;">How It Works</p>
       <h2 class="section-title reveal">Our Process</h2>
-      <p class="about-body reveal" style="margin-top:0.5rem; text-align:center;">We keep it simple and keep you informed every step of the way.</p>
+      <p class="about-body reveal" style="text-align:center;">We keep it simple and keep you informed every step of the way.</p>
     </div>
-
     <div class="process-steps">
       <div class="process-step reveal">
         <div class="step-num">01</div>
@@ -266,17 +323,17 @@
       <div class="process-step reveal">
         <div class="step-num">02</div>
         <div class="step-title">Plan &amp; Estimate</div>
-        <p class="step-desc">We work from your plans or help you develop them. A detailed, line-item estimate is provided before anything starts.</p>
+        <p class="step-desc">We work from your plans or help you develop them. A detailed line-item estimate before anything starts.</p>
       </div>
       <div class="process-step reveal">
         <div class="step-num">03</div>
         <div class="step-title">Build</div>
-        <p class="step-desc">Our crew gets to work. You're updated regularly. We handle permits, subs, inspections — all of it.</p>
+        <p class="step-desc">Our crew gets to work. You're updated regularly. Permits, subs, inspections — all handled.</p>
       </div>
       <div class="process-step reveal">
         <div class="step-num">04</div>
         <div class="step-title">Walk &amp; Deliver</div>
-        <p class="step-desc">We walk the finished project with you, address any final items, and hand you the keys. Done right, the first time.</p>
+        <p class="step-desc">We walk the finished project with you, address any final items, and hand you the keys.</p>
       </div>
     </div>
   </div>
@@ -300,18 +357,14 @@
           you can see</strong>. Josh is on every job site, not just on the phone.
         </p>
         <p class="about-body reveal">
-          From custom homes and pools to retaining walls and water remediation — if it's on your
+          From custom homes and pools to barns, septic, and water remediation — if it's on your
           property and needs fixing or building, we're your call.
         </p>
-        <a href="#contact" class="btn-primary reveal" style="margin-top:1rem; display:inline-block;">Talk to Josh</a>
+        <a href="#contact" class="btn-primary reveal" style="margin-top:1.5rem; display:inline-block;">Talk to Josh</a>
       </div>
-
       <div class="about-image-block reveal">
         <div class="about-img-frame">
-          <img
-            src="assets/josh.jpg"
-            alt="Josh Jones, contractor"
-          />
+          <img src="assets/josh.jpg" alt="Josh Jones, contractor" />
         </div>
         <div class="about-accent-box">
           Licensed<br>&amp; Insured<br>East Texas
@@ -325,23 +378,15 @@
 <section id="contact">
   <div class="section-inner">
     <div class="contact-wrap">
-
       <div>
         <p class="section-eyebrow reveal">Let's Talk</p>
-        <h2 class="contact-tagline reveal">
-          Ready to<br><em>Build Something?</em>
-        </h2>
-        <p class="about-body reveal">
-          Every project starts with a conversation. Reach out and Josh will get back to you
-          personally — usually same day.
-        </p>
-
+        <h2 class="contact-tagline reveal">Ready to<br><em>Build Something?</em></h2>
+        <p class="about-body reveal">Every project starts with a conversation. Reach out and Josh will get back to you personally — usually same day.</p>
         <div class="contact-info reveal">
           <div class="contact-row">
             <div class="contact-icon">📞</div>
             <div>
               <div class="contact-detail-label">Phone / Text</div>
-              <!-- TO CUSTOMIZE: Replace with Josh's real phone number -->
               <div class="contact-detail-val"><a href="tel:+19030000000">(903) 000-0000</a></div>
             </div>
           </div>
@@ -349,8 +394,7 @@
             <div class="contact-icon">✉️</div>
             <div>
               <div class="contact-detail-label">Email</div>
-              <!-- TO CUSTOMIZE: Replace with Josh's real email -->
-              <div class="contact-detail-val"><a href="/cdn-cgi/l/email-protection#f59f9a869db59f9a9b90869d9a9890879085949c8786db969a98"><span class="__cf_email__" data-cfemail="caa0a5b9a28aa0a5a4afb9a2a5a7afb8afbaaba3b8b9e4a9a5a7">[email&#160;protected]</span></a></div>
+              <div class="contact-detail-val"><a href="mailto:josh@joneshomerepairs.com">josh@joneshomerepairs.com</a></div>
             </div>
           </div>
           <div class="contact-row">
@@ -369,17 +413,16 @@
           </div>
         </div>
       </div>
-
       <div class="reveal">
         <form class="contact-form" onsubmit="handleSubmit(event)">
           <div class="form-row">
             <div class="form-field">
               <label for="fname">First Name</label>
-              <input type="text" id="fname" placeholder="Josh" required />
+              <input type="text" id="fname" placeholder="First" required />
             </div>
             <div class="form-field">
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" placeholder="Jones" required />
+              <input type="text" id="lname" placeholder="Last" required />
             </div>
           </div>
           <div class="form-row">
@@ -401,6 +444,8 @@
               <option>General Contracting</option>
               <option>Roofing</option>
               <option>Pool Construction</option>
+              <option>Barn / Ag Structure</option>
+              <option>Septic System</option>
               <option>Storm Drainage</option>
               <option>Water Damage Remediation</option>
               <option>Retaining Walls</option>
@@ -414,7 +459,6 @@
           <button type="submit" class="form-submit">Send Message →</button>
         </form>
       </div>
-
     </div>
   </div>
 </section>
@@ -424,8 +468,13 @@
   <div class="footer-logo">Jones Home &amp; Repairs</div>
   <ul class="footer-links">
     <li><a href="#services">Services</a></li>
-    <li><a href="#project">Work</a></li>
+    <li><a href="#projects">Work</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <p class="footer-c
+  <p class="footer-copy">© 2025 Jones Home &amp; Repairs · Palestine, TX</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
