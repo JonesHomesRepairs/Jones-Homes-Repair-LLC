@@ -37,7 +37,8 @@ body::before {
   inset: 0;
   z-index: -2;
   background: url('assets/bg.jpg') center center / cover no-repeat;
-  filter: brightness(0.72);
+  /* No dark overlay here — sections and hero handle their own haze */
+  filter: brightness(0.85);
 }
 
 /* Fallback solid so nothing is ever pure white */
